@@ -39,17 +39,13 @@ By default, the Apache Spark environments that we will want to use are not avail
 
 #### Creating Your First Notebook
 
-Click the *New notebook* tab from the Project Page  The example from Chapter 1 is available at (TODO:  add github link).  You can import this notebook directly from the github repo, or download the notebook and import it as a file.  You can also create a new notebook from scratch.  If you create it from scratch, you will need to specify the environment (Python 3.5 and Spark 2.3).  If you import the notebook, you may need to manually change the kernel.  If the notebook is imported, a security feature will prevent you from running the notebook until you mark it as a "trusted" notebook.
+Click the *New notebook* tab from the Project Page  You can import this notebook directly from the github repo, or download the notebook and import it as a file.  You can also create a new notebook from scratch.  If you create it from scratch, you will need to specify the environment (Python 3.5 and Spark 2.3).  If you import the notebook, you may need to manually change the kernel.  If the notebook is imported, a security feature will prevent you from running the notebook until you mark it as a "trusted" notebook.
 
 Once the notebook environment is created, you should be able to run code within the cells.  The first two cells are shown in the figure below.  The second cell will not run correctly if the Spark environment is not set up properly.  It is important to verify that your Spark Context exists in order to run the examples effectively.  A correctly initialized Spark Context will return the output as shown in the figure below.
 
 ![ch2WatwonMultinomialFirstTwoCells](images/ch2WatsonMultinomialFirstTwoCells.png)
 
 You can run each cell (including markdown cells) with `Ctrl + Enter` or `Shift Enter` to see the results of each calculation.  
-### Launching Directly from the github Repository.
-
-TODO:  Once the repo README is updated, it should have a "button" to launch the notebook
-
 ### Using Docker Images
 
 Docker is an open source container framework that allows you to quickly build environments that do not affect the overall configuration of your system.  It can be a very quick and easy way to get started, and is a very popular option.  Installation of docker is relatively straightforward, and installation instructions can be found at https://www.docker.com/get-started[https://www.docker.com/get-started].  Build the docker image by typing:
@@ -207,9 +203,6 @@ Most OSX installations will have `curl` installed.  Download the Anaconda instal
 ```
 $ curl -O https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
 ```
-
-and for OSX, the command is
-#@TODO - anaconda3 for linux and anaconda2 for osx????
 ```
 $ curl https://repo.continuum.io/archive/Anaconda2-5.1.0-MacOSX-x86_64.sh -o anaconda2.sh
 ```
