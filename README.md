@@ -48,7 +48,23 @@ Once the notebook environment is created, you should be able to run code within 
 You can run each cell (including markdown cells) with `Ctrl + Enter` or `Shift Enter` to see the results of each calculation.  
 ### Using Docker Images
 
-Docker is an open source container framework that allows you to quickly build environments that do not affect the overall configuration of your system.  It can be a very quick and easy way to get started, and is a very popular option.  Installation of docker is relatively straightforward, and installation instructions can be found at https://www.docker.com/get-started[https://www.docker.com/get-started].  Build the docker image by typing:
+Docker is an open source container framework that allows you to quickly build environments that do not affect the overall configuration of your system.  It can be a very quick and easy way to get started, and is a very popular option.  Installation of docker is relatively straightforward, and installation instructions can be found at https://www.docker.com/get-started[https://www.docker.com/get-started].  
+
+
+Clone this repository by typing:
+
+```
+git clone https://github.ibm.com/nilmeier/DSatEnterpriseScale.git
+```
+
+Enter the cloned directory:
+
+```
+cd DSatEnterpriseScale
+```
+
+
+Build the docker image by typing:
   
 
 ```
@@ -62,8 +78,7 @@ You will only need to build the image one time.  It will take several minutes to
 docker run -it -p 8888:8888 dses
 ```
 
-This will launch a jupyter instance hosted on `localhost:8888`.  The terminal will instruct you to browse to `http://localhost:8888/?token=someVeryLongString`.  Once you have browsed to this address, you can follow the instructions in the *Running Commands in Jupyter* Section.
-
+This will launch a jupyter instance hosted on `localhost:8888`.  The terminal will instruct you to browse to `http://someVeryLongString1:8888/?token=someVeryLongString2`. Please replace `someVeryLongString1` with `localhost`. Once you have browsed to this address, you can follow the instructions in the *Running Commands in Jupyter* Section.
 ### Installation of Apache Spark, TensorFlow, and Notebooks
 
 We provide instructions for installing the frameworks used in this book for OSX and Linux systems.  For Windows systems, we recommend using a virtual machine environment that emulates a Linux OS.  For Linux systems, Ubuntu seems to be the preferred version when looking at TensorFlow installations.  The main components to be installed are:
