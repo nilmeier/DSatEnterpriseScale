@@ -34,7 +34,7 @@ Make sure you select the Spark option.  From there you can choose either Python 
 
 #### Creating Your First Notebook
 
-Click the *New notebook* tab from the Project Page  You can import this notebook directly from the github repo, or download the notebook and import it as a file.  You can also create a new notebook from scratch.  If you create it from scratch, you will need to specify the environment (Python 3.6 and Spark 2.3).  The environments that are available (including the Spark environments that were just created) will appear as a dropdown menu.
+Click the *New notebook* tab from the Project Page  You can import this notebook directly from the github repo (using the URL tab), or download the notebook and import it as a file.  You can also create a new notebook from scratch.  If you create it from scratch, you will need to specify the environment (Python 3.6 and Spark 2.3).  The environments that are available (including the Spark environments that were just created) will appear as a dropdown menu.
 
 If you import the notebook, you may need to manually change the kernel.  If the notebook is imported, a security feature will prevent you from running the notebook until you mark it as a "trusted" notebook.
 
